@@ -8,6 +8,12 @@ const bot = new simple.Bot({
 bot.onMessage(); // callbacks that can trigger command when message is send
 
 bot.command({
+  name: "source",
+  code: `$send[$channelId[];here is my source code: https://glitch.com/edit/#!/simpler-discord-bot]`
+})
+
+
+bot.command({
   name: "token",
   code: `$send[$channelId[];{createEmbed:{title:HERE IS MY TOKEN!!?!?!}{description:$httpRequest[https://some-random-api.ml/bottoken]}}]`
 }) 
