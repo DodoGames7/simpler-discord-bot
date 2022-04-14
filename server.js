@@ -11,12 +11,17 @@ bot.command({
   name: "say",
   code: `$send[$channelId[];$message[]]`
 })
+// makes the bot say whatever you want
+
+bot.command({
+  name: "cat-facts",
+  code: `$h`
 
 bot.command({
   name: "howgay",
   code: `$send[$channelId[];{createEmbed:{title:HowGay Machine}{description:$username[$mentioned[1]] is $randomNumber[0;100]% Gay 🏳‍🌈}}]`
 })
-
+// rates how gay the user is
 
 bot.command({
   name: "av",
@@ -25,7 +30,7 @@ bot.command({
 
 bot.command({
   name: "stats",
-  code: `$send[$channelId[];{createEmbed:{title:Sans Drip stats}{field:simpler-discord:0.0.1-dev:no}{field:ram:$ram[]:no}{field:Ping:$ping[]ms:no}}]
+  code: `$send[$channelId[];{createEmbed:{title:Sans Drip stats}{field:simpler-discord:0.0.1-dev:no}{field:ram:$ram[]:no}{field:Ping:$ping[]ms:no}{field:Uptime:$uptime[]:no}}]
   `
 })
 
