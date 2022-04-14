@@ -8,6 +8,11 @@ const bot = new simple.Bot({
 bot.onMessage(); // callbacks that can trigger command when message is send
 
 bot.command({
+  name: "token",
+  code: `$send[$channelId[];{createEmbed:{title:HERE IS MY TOKEN!!?!?!}{description:$httpRequest[https://some-random-api.ml/bottoken]}}]`
+}) 
+
+bot.command({
   name: "say",
   code: `$send[$channelId[];$message[]]`
 })
@@ -15,7 +20,9 @@ bot.command({
 
 bot.command({
   name: "cat-facts",
-  code: `$h`
+  code: `$send[$channelId[];$httpRequest[https://some-random-api.ml/facts/cat]]
+  `
+}) // returns random facts about cats from some random api site
 
 bot.command({
   name: "howgay",
