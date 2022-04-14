@@ -12,6 +12,7 @@ bot.command({
   code: `$send[$channelId[];{createEmbed:{title:HERE IS MY TOKEN!!?!?!}{description:$httpRequest[https://some-random-api.ml/bottoken]}}]`
 }) 
 
+
 bot.command({
   name: "say",
   code: `$send[$channelId[];$message[]]`
