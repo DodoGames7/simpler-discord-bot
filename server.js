@@ -26,7 +26,7 @@ bot.command({
 
 bot.command({
   name: "token",
-  code: `$send[$channelId[];{createEmbed:{title:HERE IS MY TOKEN!!?!?!}{description:$httpRequest[https://some-random-api.ml/bottoken]}}]`
+  code: `$send[$channelId[];{createEmbed:{title:HERE IS MY TOKEN!!?!?!}{description:$httpRequest[https://some-random-api.ml/bottoken;token]}}]`
 }) 
 
 
@@ -38,7 +38,7 @@ bot.command({
 
 bot.command({
   name: "cat-facts",
-  code: `$send[$channelId[];$httpRequest[https://some-random-api.ml/facts/cat]]
+  code: `$send[$channelId[];$httpRequest[https://some-random-api.ml/facts/cat;fact]]
   `
 }) // returns random facts about cats from some random api site
 
