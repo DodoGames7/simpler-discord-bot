@@ -8,9 +8,20 @@ const bot = new simple.Bot({
 bot.onMessage(); // callbacks that can trigger command when message is send
 
 bot.command({
+  name: "rickroll",
+  code: `$send[$channelId[];https://www.youtube.com/watch?v=dQw4w9WgXcQ]`
+})
+
+bot.command({
+  name: "help",
+  code: `$send[$channelId[];{createEmbed:{title:Help Commands}{field:Fun:rickroll, say, token, cat-facts, howgay}{field:Other:source, stats, ping}{footer:made by dodoGames with simpler discord Package}}]`
+})
+
+bot.command({
   name: "source",
   code: `$send[$channelId[];here is my source code: https://glitch.com/edit/#!/simpler-discord-bot]`
 })
+
 
 
 bot.command({
