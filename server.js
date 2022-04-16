@@ -19,7 +19,7 @@ bot.command({
 
 bot.command({
   name: "source",
-  code: `$send[$channelId[];here is my source code: https://glitch.com/edit/#!/simpler-discord-bot]`
+  code: `$send[$channelId[];here is my source code: https://github.com/DodoGames7/simpler-discord-bot]`
 })
 
 
