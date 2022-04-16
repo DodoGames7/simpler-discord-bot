@@ -10,3 +10,5 @@ i will continue to improve this as long as the developers of the package have ad
 
 # trying the bot (unstable)
 be careful while testing the bot, you can self host it with glitch [here](https://glitch.com/edit/#!/remix/simpler-discord-bot)
+
+make sure to add a variable named `TOKEN` in .env file and fill it with your bot token to prevent your bot token being leaked on the internet <3
