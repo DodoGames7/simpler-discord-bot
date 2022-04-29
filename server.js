@@ -55,7 +55,7 @@ bot.command({
 
 bot.command({
   name: "stats",
-  code: `$send[$channelId[];{createEmbed:{title:Sans Drip stats}{field:simpler-discord:0.0.1-dev:no}{field:ram:$ram[]:no}{field:Ping:$ping[]ms:no}{field:Uptime:$uptime[]:no}}]
+  code: `$send[$channelId[];{createEmbed:{title:Sans Drip stats}{field:simpler-discord:0.0.7-dev:no}{field:ram:$ram[]:no}{field:Ping:$ping[]ms:no}{field:Uptime:$uptime[]:no}}]
   `
 })
 
